@@ -1,0 +1,52 @@
+.body{
+    font-size: 1rem;
+}
+
+.navbar{
+min-height:3rem;
+}
+
+.wrapper_welcome{
+    background-image: url(../img/hero-bg.png);
+}
+
+.brand_logo{
+    width:50%;
+}
+
+.imagen-en-escala-de-grises {
+    filter: grayscale(100%); /* 100% para convertir completamente a escala de grises */
+  }
+  
+
+.enlace{
+    color:lightgray;
+}  
+
+
+
+.btn-primary { /*Botón con fondo blanco*/
+    /*width:80%;
+    padding: 10px;*/
+    border-radius: 3px;
+    background-color: #0ea2bd;
+    color: white;
+    border: solid 1px #0ea2bd;
+    /*display:inline;*/
+    transition: font-weight 0.3s ease;
+  }  
+      .btn-primary:hover { /*HOVER sobre botón*/
+          background-color: #49be55;
+          font-weight: bold;
+      }
+      /*
+      .btn-primary:active{  /*PULSACION sobre botón*/
+        /*width:80%;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        background-color: #49be55;
+        border: solid 1px #a174db;
+      }*/
+  
+    

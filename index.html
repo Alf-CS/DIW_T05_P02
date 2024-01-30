@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Práctica 5_2 Bootstrap </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Para las pruebas de código utilizamos un CSS local-->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Cambiamos el enlace local de arriba al enlace CDN al servidor cuando todo funciona
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.css" rel="stylesheet">
+	-->
+
+	<!-- El CSS con los estilos modificados/sobreescritos va después para poder sobreescribir los estilos de Bootstrap -->
+	<link href="assets/css/styles.css" rel="stylesheet">
+
+	<!-- Opcional: solo en caso de usar componentes que dependan de JS
+	<script src="https : //cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js></script>
+	-->
+	
+	<!-- Si dependen de JS y de Popper:
+	<script src="https : //cdn . jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	-->
+	
+	<!-- Comprobar en https://getbootstrap.com/docs/5.3/getting-started/introduction/ si son las últimas -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+	
+	<!-- iconos -->
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> <!-- sol -->
+
+
+</head>
+
+
+<body>
+	<div class="container"> <!-- apertura CONTAINER principal-->
+
+
+		<nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- barra NAV superior-->
+			<!-- adaptado a partir del código BOOTSTRAP en
+				https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works
+			-->
+			<div class="container-fluid">
+				<a class="navbar-brand" href="https://github.com/Alf-CS/DIW_T05_P02">
+					<img src="assets/img/logo.png" alt="Logo">
+				</a>
+
+			  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#sec_welcome">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_about">About</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_services">Services</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_portfolio">Portfolio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_about">Team</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_product">Blog</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_career">Mega Menu</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_blog">Drop Down</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#sec_blog">Contact</a>
+				  </li>
+				</ul>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarGetStarted">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item btn btn-primary">
+							<a class="nav-link" href="#sec_contact">Get Started</a>
+						  </li>
+		
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+
+		<section id="sec_welcome"> <!-- parte 1 (WELCOME) con IMAGEN, TITULO y DESCRIPCION-->
+			<div class="container wrapper_welcome"> <!-- añadimos clase wrapper para poner BACKGROUND-->
+				<div class="text-center">
+					<img class="img-fluid" src="./assets/img/hero-carousel/hero-carousel-3.svg" alt="Lanzando cohete">
+					<h1 class="mt-6"><b> Welcome to <span class="text-muted">Web Rocket</span></b></h1>	 <!-- Falta margen superior-->
+					<p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
+					<a class="btn btn-primary" href="#sec_portfolio">Get Started</a>
+					<a class="btn btn-secondary" href="#sec_contact">Watch video</a> <!-- Falta modificar para ajustar apariencia-->
+					
+				</div>
+			</div>
+		</section>
+
+		<section id="sec_icons"> <!-- parte 2 (ICONOS) con ICONOS + DESCRIPCIONES : Falta poner iconos -->
+			<div class="row">
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+						  
+							<div class="card-body">
+							  <h5 class="card-title">Lorem Ipsum</h5>
+							  <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+	
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+						  
+							<div class="card-body">
+							  <h5 class="card-title">Sed ut perspici</h5>
+							  <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+	
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+						  
+							<div class="card-body">
+							  <h5 class="card-title">Magni Dolores</h5>
+							  <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+	
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+							  <h5 class="card-title">Nemo inem</h5>
+							  <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+							</div>
+						</div>
+					</div>
+
+				  </div>
+
+
+				  
+
+
+			</div>
+
+		</section>
+
+		<section id="sec_about"> <!-- parte 3 (ABOUT) con IMAGEN + LEYENDA y FILA de MARCAS-->
+		<div class="container">
+			<div class="py-5 text-center container"> <!-- Abren dos filas de TITULO + DESCRIPCION-->
+
+				<div class="row py-lg-5">
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<h1 class="fw-light">About us </h1>
+					<p class="lead text-muted">Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omms nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+				</div>
+				</div>
+			</div>
+
+			<div class="container col-xxl-10 px-4 py-5"> <!-- Parte media con IMAGEN + TEXTO -->
+
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+				<div class="col-lg-6">
+					<h1 class="display-6 fw-bold lh-1 mb-3">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h1>
+					<p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+				</div>
+
+				<div class="col-10 col-sm-8 col-lg-6">
+					<!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+					<img src="assets/img/about.jpg" class="d-block mx-lg-auto img-fluid" alt="Mujer sonriendo" width="700" height="500" loading="lazy">
+				</div>
+
+				</div>
+			</div>
+
+			<div class="row col-lg-12 col-10 col-sm-8"> <!-- parte  FILA de MARCAS-->
+				<div class="col-md-2">
+					<div class="brand_logo">
+						<img src="assets/img/clients/client-4.png" class="card-img-top img-fluid imagen-en-escala-de-grises" alt="...">
+					</div>
+				</div>
+
+				<div class="col-md-2">
+					<div class="brand_logo">
+						<img src="assets/img/clients/client-5.png" class="card-img-top img-fluid imagen-en-escala-de-grises" alt="...">
+					</div>
+				</div>
+
+				<div class="col-md-2">
+					<div class="brand_logo">
+						<img src="assets/img/clients/client-6.png" class="card-img-top img-fluid imagen-en-escala-de-grises" alt="...">
+					</div>
+				</div>
+
+				<div class="col-md-2">
+					<div class="brand_logo">
+						<img src="assets/img/clients/client-7.png" class="card-img-top img-fluid imagen-en-escala-de-grises" alt="...">
+					</div>
+				</div>
+
+				<div class="col-md-2">
+					<div class="brand_logo">
+						<img src="assets/img/clients/client-8.png" class="card-img-top img-fluid imagen-en-escala-de-grises" alt="...">
+					</div>
+				</div>
+
+				<div class="col-md-2">
+					<div class="brand_logo">
+						<img src="assets/img/clients/client-1.png" class="card-img-top img-fluid imagen-en-escala-de-grises" alt="...">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="container bg-secondary-subtle col-xxl-10 px-4 py-5"> <!-- Parte final con (TEXTO + botón) + IMAGEN  -->
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+				<div class="col-10 col-sm-8 col-lg-4">
+					<!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+					<img src="assets/img/cta.jpg" class="d-block mx-lg-auto img-fluid" alt="Mujer con gafas" width="700" height="500" loading="lazy">
+				</div>
+				<div class="col-lg-8">
+					<h1 class="display-6 fw-bold lh-1 mb-3">Alias sunt quas Cupiditate oluptas hic minima</h1>
+					<p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+					<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Call to action</button>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>	
+		</section>
+
+		<section id="sec_services "> <!-- parte 4  con IMAGEN->VIDEO + LEYENDA -->
+	
+				<div class="container col-xxl-12 px-4 py-5 bg-secondary"> <!-- Parte media con IMAGEN + TEXTO -->
+	
+					<div class="row flex-lg-row-reverse align-items-center py-10">
+	
+					
+						<div class="col-lg-6 text-white" id="parte4_texto">
+							<h3 class="fw-bold lh-1 mb-3" id="parte4_texto_interno">Voluptatem dignissimos provident quasi corporis</h3>
+							<h5 class="fw-bold lh-1 mb-3" id="parte4_texto_interno">Loren ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+							<p class="lead" id="parte4_texto_interno">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+						</div>
+					
+	
+					<div class="col-10 col-sm-8 col-lg-6" id="parte4_imagen">
+						<!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+						<img src="assets/img/onfocus-video-bg.jpg" class="d-block mx-lg-auto img-fluid" alt="Personas sentadas" width="700" height="500" loading="lazy">
+					</div>
+	
+					</div>
+				</div>
+		</section>
+
+		<section id="sec_services"> <!-- parte 5 (SERVICIOS) con TIRA-de-ICONOS y TEXTO+ IMAGEN-->
+			<div class="container"> 
+				<div class="row col-lg-12 col-10 col-sm-8"> <!-- Abre fila DE 6 ICONOS-->
+					<div class="col-md-2">
+						<div class="service_icon">
+							<i class="icon ion-md-sunny"></i>
+							<p> Modinest</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="service_icon">
+							<i class="icon ion-md-sunny"></i>
+							<p> Modinest</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="service_icon">
+							<i class="icon ion-md-sunny"></i>
+							<p> Modinest</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="service_icon">
+							<i class="icon ion-md-sunny"></i>
+							<p> Modinest</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="service_icon">
+							<i class="icon ion-md-sunny"></i>
+							<p> Modinest</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="service_icon">
+							<i class="icon ion-md-sunny"></i>
+							<p> Modinest</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="container bg-white col-xxl-10 px-4 py-5"> <!-- Más otra parte con (TEXTO izquierda) + IMAGEN derecha  -->
+						<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+						<div class="col-10 col-sm-8 col-lg-4">
+						
+						<img src="assets/img/features-1.svg" class="d-block mx-lg-auto img-fluid" alt="Mujer con gafas" width="700" height="500" loading="lazy">
+						</div>
+						<div class="col-lg-8">
+							<h1 class="display-6 fw-bold lh-1 mb-3">Modinest</h1>
+							<p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						</div>
+				</div>
+			</div>			
+		</section>
+
+		<section class="sec_pricing bg-secondary-subtle"> <!-- parte 6 (PRECIOS) en 3 columnas-->		
+			<!-- adaptado de PRICING de BOOTSTRAP-->
+
+			<div class="row py-lg-5">
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<h1 class="fw-light">Our pricing </h1>
+					<p class="lead text-muted">Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omms nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+				</div>
+			</div>
+
+			<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+				<div class="col">
+				  <div class="card mb-4 rounded-3 shadow-sm">
+					<div class="card-header py-3">
+					  <h4 class="my-0 fw-normal">Free</h4>
+					</div>
+					<div class="card-body">
+					  <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+					  <ul class="list-unstyled mt-3 mb-4">
+						<li>10 users included</li>
+						<li>2 GB of storage</li>
+						<li>Email support</li>
+						<li>Help center access</li>
+					  </ul>
+					  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+				  <div class="card mb-4 rounded-3 shadow-sm">
+					<div class="card-header py-3">
+					  <h4 class="my-0 fw-normal">Pro</h4>
+					</div>
+					<div class="card-body">
+					  <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+					  <ul class="list-unstyled mt-3 mb-4">
+						<li>20 users included</li>
+						<li>10 GB of storage</li>
+						<li>Priority email support</li>
+						<li>Help center access</li>
+					  </ul>
+					  <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+				  <div class="card mb-4 rounded-3 shadow-sm border-primary">
+					<div class="card-header py-3 text-white bg-primary border-primary">
+					  <h4 class="my-0 fw-normal">Enterprise</h4>
+					</div>
+					<div class="card-body">
+					  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+					  <ul class="list-unstyled mt-3 mb-4">
+						<li>30 users included</li>
+						<li>15 GB of storage</li>
+						<li>Phone and email support</li>
+						<li>Help center access</li>
+					  </ul>
+					  <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+					</div>
+				  </div>
+				</div>
+			</div> 
+		</section>
+
+		<section id="sec_services "> <!-- parte 7  con TEXTO + IMAGEN-->
+	
+			<div class="container col-xxl-12 px-4 py-5 bg-white"> <!-- Parte media con IMAGEN + TEXTO -->
+
+				<div class="row flex-lg-row align-items-center py-10">
+
+				
+					<div class="col-lg-6" id="parte4_texto">
+						<h3 class="fw-bold lh-1 mb-3" id="parte4_texto_interno">Frequently asked questions</h3>
+						<h5 class="fw-bold lh-1 mb-3" id="parte4_texto_interno">Loren ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+						<p class="lead" id="parte4_texto_interno">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+					</div>
+				
+
+				<div class="col-10 col-sm-8 col-lg-6" id="parte4_imagen">
+					<!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+					<img src="assets/img/faq.jpg" class="d-block mx-lg-auto img-fluid" alt="Signo de interrogación" width="700" height="500" loading="lazy">
+				</div>
+
+				</div>
+			</div>
+	</section>
+
+		<section id="sec_portfolio">  <!-- parte 8 (PORTFOLIO) -->
+			<!-- basado en el ejemplo ALBUM de BOOTSTRAP-->
+
+			<section class="py-5 text-center container">
+			  <div class="row py-lg-5">
+				<div class="col-lg-8 col-md-10 mx-auto">
+				  <h1 class="fw-light">Portfolio</h1>
+				  <p class="lead text-muted">
+					Non hic nulla eum consequatur maxime ut vero memo vero totam officiis pariatur eos dolorum sed fug dolorem est possimus esse quae
+repudiandae. Dolorem id enim officiis sunt deserunt esse soluta consequatur quaerat.</p>
+				</div>
+			  </div>
+			</section>
+		  
+			<div class="album py-5 bg-light">
+			  <div class="container">	  
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+		  
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+		  
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>				  								  
+				</div>
+			  </div>
+			</div>
+		  
+		</section>
+
+
+		<section id="sec_blog">  <!-- parte 9 (BLOG) -->
+			<!-- basado en el ejemplo ALBUM de BOOTSTRAP-->
+
+			<section class="py-5 text-center container">
+			  <div class="row py-lg-5">
+				<div class="col-lg-8 col-md-10 mx-auto">
+				  <h1 class="fw-light">Blog</h1>
+				  <p class="lead text-muted">
+					Recent posts from our blog.</p>
+				</div>
+			  </div>
+			</section>
+		  
+			<div class="album py-5 bg-light">
+			  <div class="container">	  
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col">
+					<div class="card shadow-sm">
+					  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+		  
+					  <div class="card-body">
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<div class="d-flex justify-content-between align-items-center">
+						  <div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+						  </div>
+						  <small class="text-muted">9 mins</small>
+						</div>
+					  </div>
+					</div>
+				  </div>		  								  
+				</div>
+			  </div>
+			</div>
+		  
+		</section>
+		
+
+		<!-- parte FOOTER-->
+		<footer class="text-center">
+			<h1>Footer</h1>
+			<div class="mx-auto">
+			  <img src="assets/img/logotipo.png" alt="Footer Logo">
+			</div>
+			<p>Todos los derechos reservados</p>
+			<a class="enlace" href="https://github.com/Alf-CS/DIW_T05_P02"> Enlace a Github</a> 
+		</footer>
+
+
+	</div>  <!-- cierre class CONTAINER principal-->
+
+</body>
+
+</html>
